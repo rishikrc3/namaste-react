@@ -1,31 +1,29 @@
-/**
- * 01. Add heading using Javascript
- */
-const jsHeading = document.createElement("h1");
-jsHeading.innerHTML = "Hello World From Javascript!";
+import React from "react";
+import ReactDOM from "react-dom/client";
+const heading = React.createElement(
+  "h1",
+  {
+    id: "title",
+  },
+  "This is an h1 tag"
+);
+const heading1 = React.createElement(
+  "h2",
+  {
+    id: "title",
+  },
+  "This is an h2 tag"
+);
 
-const jsRroot = document.getElementById("root");
-jsRroot.appendChild(jsHeading);
+const container = React.createElement(
+  "div",
+  {
+    id: "container",
+  },
+  [heading, heading1]
+);
 
-/**
- * 02. Add heading using React
- */
-const reactHeading = React.createElement("h1", {}, "Hello World From React!");
-const reactRoot = ReactDOM.createRoot(document.getElementById("root"));
-reactRoot.render(reactHeading);
-
-/**
- * Add nested HTML
- */
-const nested = React.createElement("div", { id: "parent" }, [
-  React.createElement("div", { id: "child1" }, [
-    React.createElement("h1", {}, "Hello, Iam H1 Tag Inside Child 1."),
-    React.createElement("h2", {}, "Hello, Iam H2 Tag."),
-  ]),
-  React.createElement("div", { id: "child2" }, [
-    React.createElement("h1", {}, "Hello, Iam H1 Tag Child 2."),
-    React.createElement("h2", {}, "Hello, Iam H2 Tag Child 2."),
-  ]),
-]);
-
-reactRoot.render(nested);
+// create root using createRoot
+const root = ReactDOM.createRoot(document.getElementById("root"));
+// passing react element inside root
+root.render(container);
