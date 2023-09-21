@@ -2,9 +2,12 @@
   "name": "namaste-react",
   "version": "1.0.0",
   "description": "This is a demo project ",
-  "main": "App.js",
   "scripts": {
     "test": "jest "
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/rishikrc3/namaste-react"
   },
   "author": "Rishik",
   "license": "ISC",
