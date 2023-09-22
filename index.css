@@ -37,8 +37,13 @@
   color: #ff5733; /* Change link color on hover to a contrasting color */
 }
 
+.res-container {
+  display: flex;
+  flex-wrap: wrap;
+}
 /* Restaurant Card Styles */
 .res-card {
+  margin: 2px;
   width: 100%; /* Use 100% width for flexibility */
   max-width: 300px; /* Set a maximum width to control card size */
   background-color: #fff; /* White background */
@@ -46,11 +51,13 @@
   border-radius: 8px; /* Add rounded corners */
   overflow: hidden; /* Hide any overflowing content */
   transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out; /* Add smooth hover effects */
+  padding: 5px;
 }
 
 .res-card:hover {
   transform: scale(1.05); /* Enlarge the card on hover */
   box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.3); /* Add a stronger box shadow on hover */
+  cursor: pointer;
 }
 
 /* Add additional styling for the content inside the card */
@@ -61,5 +68,4 @@
 }
 .res-logo {
   width: 100%;
-  padding: 5px;
 }
