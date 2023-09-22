@@ -3,7 +3,7 @@ import RestaurantCard from "./RestaurantCard";
 const Body = () => {
   return (
     <div className="Body">
-      <div className="Search">Search</div>
+      <div className="Search">Search it fok</div>
       <div className="res-container">
         <RestaurantCard />
       </div>
