@@ -2,7 +2,7 @@ import React from "react";
 
 const RestaurantCard = () => {
   return (
-    <div>
+    <div className="res-card">
       <h3>Meghna Foods</h3>
     </div>
   );
