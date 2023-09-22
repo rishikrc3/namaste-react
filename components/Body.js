@@ -5,10 +5,14 @@ const Body = () => {
     <div className="Body">
       <div className="Search">Search it fok</div>
       <div className="res-container">
-        <RestaurantCard />
-        <RestaurantCard />
-        <RestaurantCard />
-        <RestaurantCard />
+        <RestaurantCard
+          resName="Meghna Foods"
+          cuisine="Biriyani, North Indian, Asian"
+        />
+        <RestaurantCard
+          resName="KFC"
+          cuisine="Friend chicken, what do you expect?"
+        />
       </div>
     </div>
   );
