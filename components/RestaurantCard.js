@@ -6,7 +6,10 @@ const RestaurantCard = ({ resObj }) => {
     <div className="res-card">
       <img
         class="res-logo"
-        src="https://media-assets.swiggy.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_1024/ocgjpnijydsughgjnkk0"
+        src={
+          "https://media-assets.swiggy.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_660/" +
+          resObj.cloudinaryImageId
+        }
         alt="res-logo"
       />
       <h3>{resObj.name}</h3>
