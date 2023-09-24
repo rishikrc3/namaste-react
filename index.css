@@ -69,3 +69,17 @@
 .res-logo {
   width: 100%;
 }
+/* Button Styles */
+.filter-btn {
+  background-color: #007acc; /* Button background color */
+  color: #fff; /* Button text color */
+  border: none; /* Remove button border */
+  padding: 10px 15px; /* Add padding to the button */
+  border-radius: 4px; /* Add rounded corners to the button */
+  cursor: pointer; /* Change cursor to a pointer on hover */
+  transition: background-color 0.3s ease-in-out; /* Smooth background color transition on hover */
+}
+
+.filter-btn:hover {
+  background-color: #005c99; /* Change button background color on hover */
+}
