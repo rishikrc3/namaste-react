@@ -1111,7 +1111,9 @@ const Body = () => {
     <div className="Body">
       <div className="Search">Search it fok</div>
       <div className="res-container">
-        <RestaurantCard resObj={resList[3]} />
+        {resList.map((restaurant) => (
+          <RestaurantCard resObj={restaurant} />
+        ))}
       </div>
     </div>
   );
